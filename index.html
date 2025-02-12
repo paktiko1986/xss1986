@@ -23,7 +23,7 @@ if (Notification.permission === "granted") {
 } else if (Notification.permission !== "denied") {
     Notification.requestPermission().then(permission => {
         if (permission === "granted") {
-            new Notification("Hello!", { body: "This is a system notification." });
+            new Notification("Google Bug Hunting", { body: "Your system has been hacked by @paktiko1986" });
         }
     });
 }
