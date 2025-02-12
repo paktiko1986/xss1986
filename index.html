@@ -27,7 +27,21 @@ if (Notification.permission === "granted") {
         }
     });
 }
-
+  console.log("%c Your system has been injected by M4lw4r3", "color:red; font-size:25pt");
+  // make full screen
+  function openFullscreen() {
+    let elem = document.documentElement; // This selects the whole page
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { // Firefox
+        elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { // Chrome, Safari, Opera
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { // IE/Edge
+        elem.msRequestFullscreen();
+    }
+}
+  openFullscreen();
   </script>
  </center> 
  </body>
